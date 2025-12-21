@@ -1,0 +1,20 @@
+{
+  "id": "gntz9vnc",
+  "createdAt": "2025-12-19T18:35:02.244Z",
+  "name": "Sireesha Kuchimanchi",
+  "email": "s.kuchimanchi001@umb.edu",
+  "role": "Software engineer",
+  "skills": [
+    "React",
+    "java"
+  ],
+  "projects": [
+    {
+      "title": "Example 1",
+      "desc": "This is my first example"
+    }
+  ],
+  "jobDescription": "This is an example job description",
+  "extraNotes": "Additional notes if there are any",
+  "coverLetter": null
+}

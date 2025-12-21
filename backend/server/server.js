@@ -91,11 +91,9 @@ app.post("/api/cover-letter", (req, res) => {
       projects: Array.isArray(projects) ? projects : [],
       jobDescription: jobDescription || "",
       extraNotes: extraNotes || "",
-      // Placeholder where AI-generated cover letter will go later
       coverLetter: null,
     };
 
-    // Write to submissions/<id>/data.json
     const dataPath = path.join(dir, "data.json");
     fs.writeFileSync(dataPath, JSON.stringify(payload, null, 2), "utf8");
 
@@ -115,11 +113,6 @@ app.post("/api/cover-letter", (req, res) => {
   }
 });
 
-/**
- * GET /api/cover-letter/:id
- *
- * Fetch a previously stored submission.
- */
 app.get("/api/cover-letter/:id", (req, res) => {
   try {
     const { id } = req.params;
